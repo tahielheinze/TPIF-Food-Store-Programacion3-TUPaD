@@ -1,0 +1,7 @@
+[
+  { "id": 1, "nombre": "Hamburguesas", "descripcion": "Hamburguesas artesanales con carne premium", "imagen": "hamburguesaClasica.webp" },
+  { "id": 2, "nombre": "Pizzas", "descripcion": "Pizzas al horno de barro", "imagen": "pizzaMuzzarella.webp" },
+  { "id": 3, "nombre": "Empanadas", "descripcion": "Empanadas caseras horneadas", "imagen": "empanadaDeJyQ.webp" },
+  { "id": 4, "nombre": "Bebidas", "descripcion": "Bebidas frías y calientes", "imagen": "CocaCola500ml.webp" },
+  { "id": 5, "nombre": "Postres", "descripcion": "Delicias dulces", "imagen": "heladoArtesanal.webp" }
+]

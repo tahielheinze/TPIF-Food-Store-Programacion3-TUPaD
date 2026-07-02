@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesa Clasica",
+    "precio": 4500,
+    "descripcion": "Carne 150g, lechuga, tomate, cebolla morada y mayonesa",
+    "stock": 50,
+    "imagen": "hamburguesaClasica.webp",
+    "disponible": true,
+    "categoriaId": 1
+  },
+  {
+    "id": 2,
+    "nombre": "Hamburguesa BBQ y Bacon",
+    "precio": 6200,
+    "descripcion": "Doble carne 150g c/u, cheddar, panceta y salsa barbacoa",
+    "stock": 40,
+    "imagen": "hamburguesaBBQBacon.webp",
+    "disponible": true,
+    "categoriaId": 1
+  },
+  {
+    "id": 3,
+    "nombre": "Hamburguesa Veggie",
+    "precio": 5000,
+    "descripcion": "Medallon de lentejas y quinoa, rucula, tomate confitado y hummus",
+    "stock": 20,
+    "imagen": "hamburguesaVeggie.webp",
+    "disponible": true,
+    "categoriaId": 1
+  },
+  {
+    "id": 4,
+    "nombre": "Pizza Mozzarella",
+    "precio": 3800,
+    "descripcion": "Mozzarella, salsa de tomate y oregano",
+    "stock": 25,
+    "imagen": "pizzaMuzzarella.webp",
+    "disponible": true,
+    "categoriaId": 2
+  },
+  {
+    "id": 5,
+    "nombre": "Pizza Napolitana",
+    "precio": 4500,
+    "descripcion": "Mozzarella, rodajas de tomate, ajo, aceitunas y albahaca",
+    "stock": 25,
+    "imagen": "pizzaNapolitana.webp",
+    "disponible": true,
+    "categoriaId": 2
+  },
+  {
+    "id": 6,
+    "nombre": "Pizza 4 Quesos",
+    "precio": 4500,
+    "descripcion": "Mozzarella, Gorgonzola, Fontina y Parmesano",
+    "stock": 25,
+    "imagen": "pizza4quesos.webp",
+    "disponible": true,
+    "categoriaId": 2
+  },
+  {
+    "id": 7,
+    "nombre": "Empanada de Carne",
+    "precio": 2000,
+    "descripcion": "Carne picada, cebolla, huevo duro, aceitunas y especias",
+    "stock": 100,
+    "imagen": "empanadaDeCarne.webp",
+    "disponible": true,
+    "categoriaId": 3
+  },
+  {
+    "id": 8,
+    "nombre": "Empanada de Pollo",
+    "precio": 2000,
+    "descripcion": "Pollo desmenuzado, cebolla, morron y crema",
+    "stock": 80,
+    "imagen": "empanadaDePollo.webp",
+    "disponible": true,
+    "categoriaId": 3
+  },
+  {
+    "id": 9,
+    "nombre": "Empanada Jamon y Queso",
+    "precio": 2000,
+    "descripcion": "Jamon cocido y mozzarella",
+    "stock": 90,
+    "imagen": "empanadaJyQ.webp",
+    "disponible": false,
+    "categoriaId": 3
+  },
+  {
+    "id": 10,
+    "nombre": "Coca-Cola 500ml",
+    "precio": 1500,
+    "descripcion": "Gaseosa Coca-Cola original 500ml",
+    "stock": 200,
+    "imagen": "CocaCola500ml.webp",
+    "disponible": true,
+    "categoriaId": 4
+  },
+  {
+    "id": 11,
+    "nombre": "7up 500ml",
+    "precio": 1500,
+    "descripcion": "Gaseosa 7up 500ml",
+    "stock": 180,
+    "imagen": "7up500ml.webp",
+    "disponible": true,
+    "categoriaId": 4
+  },
+  {
+    "id": 12,
+    "nombre": "Agua Mineral 500ml",
+    "precio": 1000,
+    "descripcion": "Agua mineral sin gas 500ml",
+    "stock": 300,
+    "imagen": "/aguaMineral500ml.webp",
+    "disponible": true,
+    "categoriaId": 4
+  },
+  {
+    "id": 13,
+    "nombre": "Brownie de Chocolate",
+    "precio": 2500,
+    "descripcion": "Brownie de chocolate con nueces y helado de vainilla",
+    "stock": 30,
+    "imagen": "BrownieHelado.webp",
+    "disponible": true,
+    "categoriaId": 5
+  },
+  {
+    "id": 14,
+    "nombre": "Torta Rogel",
+    "precio": 3000,
+    "descripcion": "Torta Rogel con crema y frutas",
+    "stock": 20,
+    "imagen": "tortaRogel.webp",
+    "disponible": true,
+    "categoriaId": 5
+  },
+  {
+    "id": 15,
+    "nombre": "Helado Artesanal",
+    "precio": 2000,
+    "descripcion": "Helado artesanal de vainilla, chocolate y frutilla",
+    "stock": 50,
+    "imagen": "heladoArtesanal.webp",
+    "disponible": true,
+    "categoriaId": 5
+  }
+]

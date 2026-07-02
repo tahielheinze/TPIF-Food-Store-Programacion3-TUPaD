@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../../css/style.css">
+    <title>Food Store - Catálogo</title>
+</head>
+<body>
+    <main class="main-container">
+
+        <header class="header">
+            <h1 class="header__title"><a href="#">FOOD STORE</a></h1>
+            <button type="button" id="btn-menu-movil" class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li id="admin-nav-item" class="nav__item"></li>
+                    <li id="username-nav-item" class="nav__item"></li>
+                    <li class="nav__item"><a href="#" class="nav__link">INICIO</a></li>
+                    <li id="pedidos-nav-item" class="nav__item"></li>
+                    <li class="nav__item"><a href="../cart/cart.html" class="nav__link">CARRITO (<span id="carrito-count">0</span>)</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--admin" id="logoutButton">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr class="separator">
+
+        <div class="store-layout">
+            <aside class="store-sidebar">
+                <h2 class="store-sidebar__title">CATEGORÍAS</h2>
+                <ul id="lista-categorias" class="store-sidebar__list"></ul>
+            </aside>
+
+            <section class="store-content">
+                <div class="store-toolbar">
+                    <div class="toolbar-bar">
+                        <form class="search-form" id="form-busqueda" method="post">
+                            <svg class="search-form__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <input type="search" id="input-busqueda" class="search-form__input" placeholder="Buscar productos...">
+                        </form>
+
+                        <div class="sort-dropdown">
+                            <button type="button" id="btn-orden" class="sort-dropdown__button">Ordenar por <span class="chevron">▾</span></button>
+                            <ul id="lista-orden" class="sort-dropdown__list hidden">
+                                <li data-orden="recomendados" class="activo">Recomendados</li>
+                                <li data-orden="az">A-Z</li>
+                                <li data-orden="za">Z-A</li>
+                                <li data-orden="precio-asc">Menor precio</li>
+                                <li data-orden="precio-desc">Mayor precio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mensaje-vacio" class="products-empty">
+                    <p>No se encontraron productos.</p>
+                </div>
+
+                <article class="products" id="contenedor-productos"></article>
+            </section>
+        </div>
+    </main>
+    
+    <hr class="separator">
+    
+    <footer class="footer">
+        <p class="footer__text">© 2026 Food Store. Todos los derechos reservados.</p>
+        <p class="footer__text">Contacto: <a href="mailto:info@foodstore.com" class="footer__link">info@foodstore.com</a></p>
+    </footer>
+
+    <script type="module" src="./home.ts"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Registro - Food Store</title>
+</head>
+<body>
+    <div class="login-container">
+            <main class="login">
+            <form class="login__form" id="form-registro" method="post">
+
+                <header class="login__header">
+                    <h1 class="login__title">FOOD STORE</h1>
+                    <p class="login__subtitle">Crear cuenta</p>
+                </header>
+
+                <div class="login__field">
+                    <label class="login__label" for="nombre"><strong>Nombre:</strong></label>
+                    <input class="login__input" type="text" id="nombre" name="nombre" autocomplete="off" required placeholder="Tu nombre">
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="apellido"><strong>Apellido:</strong></label>
+                    <input class="login__input" type="text" id="apellido" name="apellido" autocomplete="off" required placeholder="Tu apellido">
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="email"><strong>Email:</strong></label>
+                    <input class="login__input" type="email" id="email" name="email" autocomplete="off" required placeholder="micorreo@ejemplo.com">
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="celular"><strong>Celular (opcional):</strong></label>
+                    <input class="login__input" type="tel" id="celular" name="celular" autocomplete="off" placeholder="Tu numero de celular">
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="password"><strong>Contrasena:</strong></label>
+                    <input class="login__input" type="password" id="password" name="password" autocomplete="off" required placeholder="Minimo 6 caracteres">
+                </div>
+
+                <button class="login__button" type="submit">REGISTRARSE</button>
+
+                <p class="login__register">
+                    Ya tenes cuenta? 
+                    <a class="login__link" href="../login/login.html">Iniciar Sesion</a>
+                </p>
+
+            </form>
+        </main>
+    </div>
+    <script type="module" src="./registro.ts"></script>
+</body>
+</html>

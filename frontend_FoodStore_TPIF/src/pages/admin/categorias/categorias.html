@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Panel Admin - Categorias - Food Store</title>
+</head>
+<body>
+    <div class="admin-layout">
+        <header class="header">
+            <h1 class="header__title"><a href="../dashboard/dashboard.html">FOOD STORE</a></h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item" id="username-nav-item"></li>
+                    <li class="nav__item"><a href="/src/pages/store/home/home.html" class="nav__link">Tienda</a></li>
+                    <li class="nav__item"><a href="../dashboard/dashboard.html" class="nav__link nav__link--admin">Panel Admin</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--admin" id="logoutButton">Cerrar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="admin-body">
+            <aside class="admin-sidebar">
+                <div class="admin-sidebar__header">
+                    <p class="admin-sidebar__titulo">Administracion</p>
+                    <p class="admin-sidebar__subtitulo">Panel de control</p>
+                </div>
+                <nav>
+                    <ul class="admin-sidebar__list">
+                        <li><a href="../dashboard/dashboard.html" class="admin-sidebar__link">Dashboard</a></li>
+                        <li><a href="./categorias.html" class="admin-sidebar__link admin-sidebar__link--active">Categorias</a></li>
+                        <li><a href="../home.html" class="admin-sidebar__link">Productos</a></li>
+                        <li><a href="../pedidos/pedidos.html" class="admin-sidebar__link">Pedidos</a></li>
+                    </ul>
+                </nav>
+                <a href="/src/pages/store/home/home.html" class="admin-sidebar__link--tienda">Ver Tienda</a>
+            </aside>
+
+            <main class="admin-content">
+                <div class="admin-content__header">
+                    <h2 class="admin-content__titulo">Gestion de Categorias</h2>
+                    <button type="button" id="btn-nueva-categoria" class="btn-nuevo">+ Nueva Categoria</button>
+                </div>
+
+                <div class="admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr><th>ID</th><th>Imagen</th><th>Nombre</th><th>Descripcion</th><th>Acciones</th></tr>
+                        </thead>
+                        <tbody id="tabla-categorias"></tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="modal-categoria" class="modal-overlay modal-overlay--oculto">
+        <div class="modal-checkout">
+            <div class="modal-checkout__header">
+                <h3 id="modal-titulo">Nueva Categoria</h3>
+                <button id="btn-cerrar-modal" class="modal-checkout__cerrar" type="button">X</button>
+            </div>
+            <form id="form-categoria" class="modal-checkout__form">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+
+                <label for="descripcion">Descripcion</label>
+                <input type="text" id="descripcion">
+
+                <label for="imagen">URL de Imagen</label>
+                <input type="text" id="imagen" placeholder="https://ejemplo.com/imagen.jpg">
+
+                <button type="submit" id="btn-submit-categoria">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <hr class="separator">
+
+    <footer class="footer">
+        <p class="footer__text">2026 Food Store. Todos los derechos reservados.</p>
+        <p class="footer__text">Contacto: <a href="mailto:info@foodstore.com" class="footer__link">info@foodstore.com</a></p>
+    </footer>
+
+    <script type="module" src="./categoria.ts"></script>
+</body>
+</html>

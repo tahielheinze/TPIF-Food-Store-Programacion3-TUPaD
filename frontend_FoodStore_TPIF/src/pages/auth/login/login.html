@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Login - Food Store</title>
+</head>
+<body>
+    <div class="login-container">
+        <main class="login">
+            <form class="login__form" id="form-login" method="post">
+
+                <header class="login__header">
+                    <h1 class="login__title">FOOD STORE</h1>
+                    <p class="login__subtitle">Iniciar Sesion</p>
+                </header>
+
+                <div class="login__field">
+                    <label class="login__label" for="email"><strong>Email:</strong></label>
+                    <input class="login__input" type="email" id="email" name="email" autocomplete="off" required placeholder="micorreo@ejemplo.com">
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="password"><strong>Contrasena:</strong></label>
+                    <input class="login__input" type="password" id="password" name="password" autocomplete="off" required placeholder="Tu contrasena">
+                </div>
+
+                <button class="login__button" type="submit">INGRESAR</button>
+
+                <p class="login__register">
+                    No tenes cuenta? 
+                    <a class="login__link" href="../registro/registro.html">Registrarse</a>
+                </p>
+
+            </form>
+        </main>
+    </div>
+
+    <script type="module" src="./login.ts"></script>
+</body>
+</html>

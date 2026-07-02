@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Panel Admin - Dashboard - Food Store</title>
+</head>
+<body>
+    <div class="admin-layout">
+        <header class="header">
+            <h1 class="header__title"><a href="./dashboard.html">FOOD STORE</a></h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item" id="username-nav-item"></li>
+                    <li class="nav__item"><a href="/src/pages/store/home/home.html" class="nav__link">Tienda</a></li>
+                    <li class="nav__item"><a href="./dashboard.html" class="nav__link nav__link--admin">Panel Admin</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--admin" id="logoutButton">Cerrar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="admin-body">
+            <aside class="admin-sidebar">
+                <div class="admin-sidebar__header">
+                    <p class="admin-sidebar__titulo">Administracion</p>
+                    <p class="admin-sidebar__subtitulo">Panel de control</p>
+                </div>
+                <nav>
+                    <ul class="admin-sidebar__list">
+                        <li><a href="./dashboard.html" class="admin-sidebar__link admin-sidebar__link--active">Dashboard</a></li>
+                        <li><a href="../categorias/categorias.html" class="admin-sidebar__link">Categorias</a></li>
+                        <li><a href="../home.html" class="admin-sidebar__link">Productos</a></li>
+                        <li><a href="../pedidos/pedidos.html" class="admin-sidebar__link">Pedidos</a></li>
+                    </ul>
+                </nav>
+                <a href="/src/pages/store/home/home.html" class="admin-sidebar__link--tienda">Ver Tienda</a>
+            </aside>
+
+            <main class="admin-content">
+                <h2 class="admin-content__titulo">Panel de Administracion</h2>
+
+                <div class="admin-stats-grid">
+                    <div class="stat-card stat-card--categorias">
+                        <p class="stat-card__label">Categorias</p>
+                        <p class="stat-card__value" id="stat-categorias">0</p>
+                        <a href="../categorias/categorias.html" class="stat-card__btn">Gestionar</a>
+                    </div>
+                    <div class="stat-card stat-card--productos">
+                        <p class="stat-card__label">Productos</p>
+                        <p class="stat-card__value" id="stat-productos">0</p>
+                        <a href="../home.html" class="stat-card__btn">Gestionar</a>
+                    </div>
+                    <div class="stat-card stat-card--pedidos">
+                        <p class="stat-card__label">Pedidos</p>
+                        <p class="stat-card__value" id="stat-pedidos">0</p>
+                        <a href="../pedidos/pedidos.html" class="stat-card__btn">Gestionar</a>
+                    </div>
+                    <div class="stat-card stat-card--disponibles">
+                        <p class="stat-card__label">Disponibles</p>
+                        <p class="stat-card__value" id="stat-disponibles">0</p>
+                        <p class="stat-card__nota">Productos activos</p>
+                    </div>
+                </div>
+
+                <div class="admin-resumen">
+                    <h3 class="admin-resumen__titulo">Resumen Rapido</h3>
+                    <div class="admin-resumen__grid" id="resumen-grid">
+                        <p id="resumen-cargando">Cargando estadisticas...</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <hr class="separator">
+
+    <footer class="footer">
+        <p class="footer__text">2026 Food Store. Todos los derechos reservados.</p>
+        <p class="footer__text">Contacto: <a href="mailto:info@foodstore.com" class="footer__link">info@foodstore.com</a></p>
+    </footer>
+
+    <script type="module" src="./dashboard.ts"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "eliminado": false,
+    "createdAt": "2026-06-08T10:00:00.000Z",
+    "fecha": "2026-06-08T10:00:00.000Z",
+    "estado": "TERMINADO",
+    "total": 9600,
+    "formaPago": "TARJETA",
+    "idUsuario": 2,
+    "detalles": [
+      { "idProducto": 1, "cantidad": 2, "subtotal": 9000 },
+      { "idProducto": 12, "cantidad": 1, "subtotal": 1000 }
+    ]
+  },
+  {
+    "id": 2,
+    "eliminado": false,
+    "createdAt": "2026-06-09T14:30:00.000Z",
+    "fecha": "2026-06-09T14:30:00.000Z",
+    "estado": "CONFIRMADO",
+    "total": 11400,
+    "formaPago": "EFECTIVO",
+    "idUsuario": 2,
+    "detalles": [
+      { "idProducto": 2, "cantidad": 1, "subtotal": 6200 },
+      { "idProducto": 5, "cantidad": 1, "subtotal": 4500 }
+    ]
+  }
+]

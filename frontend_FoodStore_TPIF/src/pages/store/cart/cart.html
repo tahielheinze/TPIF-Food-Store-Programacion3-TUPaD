@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Carrito - Food Store</title>
+</head>
+<body>
+    <main class="main-container">
+        <header class="header">
+            <h1 class="header__title"><a href="../home/home.html">FOOD STORE</a></h1>
+            <button type="button" id="btn-menu-movil" class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li id="admin-nav-item" class="nav__item"></li>
+                    <li id="username-nav-item" class="nav__item"></li>
+                    <li class="nav__item"><a href="../home/home.html" class="nav__link">Volver al catalogo</a></li>
+                    <li class="nav__item"><a href="../../client/orders/orders.html" class="nav__link">Mis Pedidos</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--admin" id="logoutButton">Cerrar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr class="separator">
+        <section class="cart-section">
+            <h2>Mi Carrito</h2>
+            <br>
+            <div id="mensaje-vacio" class="cart-empty">
+                <p class="mensaje-empty__carrito">Tu carrito esta vacio.</p>
+                <a href="../home/home.html" class="nav__link--admin cart-empty__link">
+                    Ver productos
+                </a>
+            </div>
+
+            <div class="cart-layout">
+                <div id="contenedor-carrito" class="cart-items"></div>
+
+                <aside id="resumen-container" class="cart-summary">
+                    <h3 class="cart-summary__title">Resumen del Pedido</h3>
+                    <div class="cart-summary__row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal-precio">$0</span>
+                    </div>
+                    <div class="cart-summary__row">
+                        <span>Envio:</span>
+                        <span id="envio-precio">$0</span>
+                    </div>
+                    <hr class="separator">
+                    <div class="cart-summary__row cart-summary__row--total">
+                        <span>Total:</span>
+                        <span id="total-precio">$0</span>
+                    </div>
+                    <button class="btn-checkout" id="btn-proceder-pago">Proceder al Pago</button>
+                    <button class="btn-vaciar" id="btn-vaciar">Vaciar Carrito</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-checkout" class="modal-overlay modal-overlay--oculto">
+        <div class="modal-checkout">
+            <div class="modal-checkout__header">
+                <h3>Completar Pedido</h3>
+                <button id="btn-cerrar-modal" class="modal-checkout__cerrar" type="button">X</button>
+            </div>
+
+            <form id="form-checkout" class="modal-checkout__form">
+                <div class="login__field">
+                    <label class="login__label" for="telefono"><strong>Telefono:</strong></label>
+                    <input class="login__input" type="tel" id="telefono" name="telefono" required placeholder="Ej: +54 9 261 123-4567">
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="direccion"><strong>Direccion de Entrega:</strong></label>
+                    <textarea class="login__input" id="direccion" name="direccion" required placeholder="Calle, numero, piso, depto"></textarea>
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="metodoPago"><strong>Metodo de Pago:</strong></label>
+                    <select class="login__input" id="metodoPago" name="metodoPago" required>
+                        <option value="">Seleccione un metodo</option>
+                        <option value="TARJETA">Tarjeta</option>
+                        <option value="TRANSFERENCIA">Transferencia</option>
+                        <option value="EFECTIVO">Efectivo</option>
+                    </select>
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="notas"><strong>Notas adicionales (opcional):</strong></label>
+                    <textarea class="login__input" id="notas" name="notas" placeholder="Instrucciones especiales, timbre, etc."></textarea>
+                </div>
+
+                <hr class="separator">
+                <div class="cart-summary__row cart-summary__row--total">
+                    <span>Total a pagar:</span>
+                    <span id="modal-total-precio">$0</span>
+                </div>
+
+                <button class="btn-checkout" type="submit">Confirmar Pedido</button>
+            </form>
+        </div>
+    </div>
+    
+    <hr class="separator">
+    
+    <footer class="footer">
+        <p class="footer__text">2026 Food Store. Todos los derechos reservados.</p>
+        <p class="footer__text">Contacto: <a href="mailto:info@foodstore.com" class="footer__link">info@foodstore.com</a></p>
+    </footer>
+    <script type="module" src="./cart.ts"></script>
+</body>
+</html>
