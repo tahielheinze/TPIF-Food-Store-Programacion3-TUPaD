@@ -3,7 +3,7 @@
 Proyecto Frontend para **Food Store**, Trabajo Practico Final de Programación 3 - Universidad Tecnológica Nacional - TUPaD UTN.
 
 ## Enlace Video
-[Explicación del Código]()
+[Explicación del Código](https://youtu.be/IKUXwAeXOk4)
 
 ## Descripción
 Aplicación que permite a los usuarios navegar por un catálogo de productos, filtrar por categorías, buscar productos por nombre y gestionar un carrito de compras interactivo con persistencia de datos en local storage.
