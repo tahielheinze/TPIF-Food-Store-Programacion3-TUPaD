@@ -3,7 +3,7 @@
 Proyecto Food Store, Trabajo Práctico Final de Programación 3 — Universidad Tecnológica Nacional - TUPaD UTN.
 
 ## Enlace Video
-[Explicación del Código]()
+[Explicación del Código](https://youtu.be/IKUXwAeXOk4)
 
 ## Descripción
 
