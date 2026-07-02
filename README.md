@@ -4,7 +4,7 @@ Este proyecto es el Trabajo Final de la materia Programación 3 de la Tecnicatur
 Consiste en un sistema completo de gestión de pedidos de comida, implementado en dos partes independientes que se comunican conceptualmente.
 
 ## Enlace Video de Presentación
-[Explicación del Código]()
+[Explicación del Código](https://youtu.be/IKUXwAeXOk4)
 
 ## Arquitectura del Sistema
 
